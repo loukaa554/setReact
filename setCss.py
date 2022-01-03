@@ -33,7 +33,7 @@ if start == "1" :
     if command == "yes" or command == "y" or command == "Y" or command == "Yes" or command == "YES" or command == "" :
         fileDestination = input("File destination ? : ")
         if fileDestination != "" :
-            shutil.copy2('C:/Project/set/assets/.reset.css', fileDestination)
+            shutil.copy2('C:/Project/set/assets/reset.css', fileDestination)
             print("Uploaded file ✅✅✅✅")
         else : 
             print("Critical error")
@@ -44,19 +44,19 @@ if start == "1" :
         if fileDestination != "" :
             commandDestination = input("File destination is "+fileDestination+" ? [Y/n] : ")
             if command == "yes" or command == "y" or command == "Y" or command == "Yes" or command == "YES" or command == "" :
-                shutil.copy2('C:/Project/set/assets/.root.css', fileDestination)
+                shutil.copy2('C:/Project/set/assets/root.css', fileDestination)
                 print("Uploaded file ✅✅✅✅")
             else : 
                 fileDestination = input("File destination ? : ")
                 if fileDestination != "" :
-                    shutil.copy2('C:/Project/set/assets/.root.css', fileDestination)
+                    shutil.copy2('C:/Project/set/assets/root.css', fileDestination)
                     print("Uploaded file ✅✅✅✅")
                 else : 
                     print("Critical error")
         else : 
             fileDestination = input("File destination ? : ")        
             if fileDestination != "" :
-                shutil.copy2('C:/Project/set/assets/.root.css', fileDestination)
+                shutil.copy2('C:/Project/set/assets/root.css', fileDestination)
                 print("Uploaded file ✅✅✅✅")
             else : 
                 print("Critical error")
@@ -82,8 +82,8 @@ if start == "3" :
         os.system("cd "+fileDestination+" && npx create-react-app "+fileName)
         os.system("cd "+fileDestination+"/"+fileName+"/src && mkdir assets && mkdir pages && mkdir components && cd assets && mkdir css && mkdir image")
         shutil.copy2('C:/Project/set/assets/App.js', fileDestination+"/"+fileName+"/src")
-        shutil.copy2('C:/Project/set/assets/.root.css', fileDestination+"/"+fileName+"/src/assets/css")
-        shutil.copy2('C:/Project/set/assets/.reset.css', fileDestination+"/"+fileName+"/src/assets/css")
+        shutil.copy2('C:/Project/set/assets/root.css', fileDestination+"/"+fileName+"/src/assets/css")
+        shutil.copy2('C:/Project/set/assets/reset.css', fileDestination+"/"+fileName+"/src/assets/css")
         command = input("Install react-router-dom ? [Y/n] : ")
         if command == "yes" or command == "y" or command == "Y" or command == "Yes" or command == "YES" or command == "" :
             os.system("cd "+fileDestination+"/"+fileName+" && npm i react-router-dom")
